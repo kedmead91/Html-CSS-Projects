@@ -1,0 +1,88 @@
+/*Section One*/
+
+*{
+margin: 0 auto;
+}
+
+header {
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/49/60/f1/exterior.jpg");
+    background-position: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:60px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 auto;
+    height: 120px;
+    width:auto;
+    padding-top: 70px;
+
+}
+img {
+  border: solid 5px white;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  margin: 35px auto;
+
+}
+
+h1 {
+    color:white;
+    font-family: cursive;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+/*Section Two*/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+body {
+    margin: 0 auto;
+    background-color: rgb(12, 12, 54);
+  }
+
+
+h2 {
+    font-family:cursive;
+    text-align:center;
+    font-size: 50px;
+}
+
+.p-contact {
+  font-family:Georgia;
+  text-align:center;
+  font-size: 20px;
+
+}
+ 
+.inpagelink  {
+  font-size: 25px;
+  padding: 15px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.frontp {
+  margin: 0 auto;
+  padding: 50px 60px;
+  margin: 0 auto;
+  width:1300px;
+  height: 700px;
+  color: white;
+  font-family: Georgia;
+  text-align: justify;
+  font-size: 25px;
+
+}
+
