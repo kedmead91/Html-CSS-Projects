@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+   <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
 </head>
-<header>Contact Me
-    <br>
-    <a href= "index.html" class="inpagelink">Home</a>
-</header>
-<br>
-<body>
-   <p>Send an email</p>
-    <form class= "contact-form" action="contactform" method="post">
-        <input type="text" name="name" placeholder="Full Name">
-        <input type="text" name="email" placeholder="Your E-mail">
-        <br>
-        <br>
-        <textarea rows="10" cols="30" name="message">Leave your message/enquiry</textarea>
-        <br>
-        <button type="submit" name="submit">SEND</button>
-    </form>
-        
-</body>
+   <!--Beginning of contact page includes header + navigation links-->
+   <h1 class="header-container"><u>Kamara's Portfolio</u></h1>
+   <br><br><br>
+   <nav>
+   <a href= "index.html" class="inpagelink">Home</a>
+   <a href="portfolio.html" class="inpagelink"> Visit My Portfolio </a>
+   </nav>
+
+   <!--Contact form (middle)-->
+   <body>
+   <div class="wrapper">
+   <form class="form">
+   <div class="pageTitle title"><u> Contact Form </u></div><br>
+   <div class="secondaryTitle title">Fill in this form to contact me & I will get back to you A.S.A.P</div>
+   <input type="text" class="name formEntry" placeholder="Name" />
+   <input type="text" class="email formEntry" placeholder="Email"/>
+   <textarea class="message formEntry" placeholder="Message"></textarea>
+   <button class="submit formEntry" onclick="thanks()">Submit</button>
+   </form>
+   </div>
+   <script src="app.js"></script>
+   </body>
+   <!--End of website-->
 </html>

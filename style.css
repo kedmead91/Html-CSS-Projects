@@ -1,88 +1,188 @@
-/*Section One*/
+
+/*Style for whole page*/
 
 *{
-margin: 0 auto;
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(18, 14, 32);
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header {
-    background-image: url("https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/49/60/f1/exterior.jpg");
-    background-position: center;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size:60px;
-    font-weight: bold;
-    text-transform: capitalize;
-    text-align: center;
-    margin: 0 auto;
-    height: 120px;
-    width:auto;
-    padding-top: 70px;
+/*Header styling*/
 
-}
-img {
-  border: solid 5px white;
-  padding: 20px;
-  width: 300px;
-  height: 300px;
-  margin: 35px auto;
+.header-container {
+  display: flex;
+  flex-flow: row wrap;
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/49/60/f1/exterior.jpg");
+  background-size: contain;
+  height:200px;
+  width: 100%;
+  border: solid 10px white;
 
 }
 
 h1 {
-    color:white;
-    font-family: cursive;
-    text-align: center;
-    font-size: 40px;
-    margin: 0 auto;
-    padding: 25px;
+justify-content: center;
+align-content: center;
+font-size: 60px;
+justify-content: space-around;
+
 }
 
-/*Section Two*/
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-body {
-    margin: 0 auto;
-    background-color: rgb(12, 12, 54);
-  }
-
+.inpagelink {
+  font-size: 25px;
+  justify-content: flex-start;
+  padding: 40px;
+}
 
 h2 {
-    font-family:cursive;
-    text-align:center;
-    font-size: 50px;
+  text-transform: capitalize;
+  font-size: 40px;
+  padding: 30px;
+  border: solid 5px white;
+  position: relative; top: -1px;
 }
 
-.p-contact {
-  font-family:Georgia;
-  text-align:center;
-  font-size: 20px;
+/*Styling for picture of me on home page*/
 
-}
+.imgofme {
+  height: 400px;
+  border: solid 4px white;
+  position: relative; top: -60px;
+  padding: 25px;
  
-.inpagelink  {
-  font-size: 25px;
-  padding: 15px;
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Styling for main paragraph/ middle of page*/
+
+.box {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  border: solid 5px white;
+}
+
+p {
+  font-size: 23px;
+  padding: 50px;
+  
+}
+
+/*Styling for contact form*/
+
+#title-Tag-Line {
+  font-size: 20px;
+}
+
+/* .card-item__bg{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  transform: translate(0px, 50px);
+  z-index: 5;
+} */
+
+/* form animation starts */
+.form {
+  background: #fff;
+  border-radius: 5px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  left: 0;
+  right: 0;
+  position: absolute;
+/*   z-index: 1; */
+  animation: bounce 1.5s infinite;
+}
+::-webkit-input-placeholder {
+  font-size: 1.5em;
+}
+
+.title{
+  display: block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  width: 300px;
+}
+
+
+.pageTitle{
+  font-size: 2.5em;
   font-weight: bold;
-  margin: 0 auto;
+  text-align: center;
 }
 
-.frontp {
-  margin: 0 auto;
-  padding: 50px 60px;
-  margin: 0 auto;
-  width:1300px;
-  height: 700px;
+.secondaryTitle{
   color: white;
-  font-family: Georgia;
-  text-align: justify;
-  font-size: 25px;
-
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
 }
+
+.name {
+  background-color: #ebebeb;
+  color:black;
+  font-size:15px;
+}
+
+
+.email {
+  background-color: #ebebeb;
+  height: 2em;
+  color: black;
+  font-size:15px;
+}
+
+
+.message {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+  color: black;
+  font-size:15px;
+}
+
+
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.submit {
+  width: 200px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.submit:hover {
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  transform: translateY(-3px);
+  width: 300px;
+  border-radius: 0%;
+  padding: 25px;
+}
+
+@keyframes bounce {
+  0% {
+    tranform: translate(0, 4px);
+  }
+  50% {
+    transform: translate(0, 8px);
+  }
+} 
 
