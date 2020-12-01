@@ -4,6 +4,7 @@
    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="resources/portfolio.js"></script>
    <title>Document</title>
 </head>
    <!--Beginning of contact page includes header + navigation links-->
@@ -13,20 +14,54 @@
    <a href= "index.html" class="inpagelink">Home</a>
    <a href="portfolio.html" class="inpagelink"> Visit My Portfolio </a>
    </nav>
+<br><br>
+   <div>
+      <div id="error" class="error"></div>
+      <!-- <form id="form" onsubmit="return test()"> -->
+      </div>
+ <br>
+         <div class = "form">
+          <form id="form" onsubmit="return test()">
+            <br>
+            <h2 class="pageTitle"><u>Contact Form</u></h2>
+            <br><br>
+            <div class = "wrapper">
+            <h3 class="secondaryTitle">Fill in this form & I will get back to you</h3>
+            <br>
+              <div>
+                  <input type="text" id="name" placeholder="Full Name" required>
+             </div>
+             <div>
+               <input type="email" id="email" placeholder="Email Address"> 
+           </div>
+              <div>
+               <textarea type = "text" id="message" class = "message" placeholder="Message"></textarea>
+               </div>
+              
+               <div class="button"></div>
+                  <input type="submit" value="Submit">
+            </div>
+              </div>
+              </div>
+      </form>
+   </div>
+      <div id="confirmation" class="error"></div>
+</div>
 
-   <!--Contact form (middle)-->
+
+   <!--Contact form (middle)
    <body>
-   <div class="wrapper">
-   <form class="form">
+   <div id="error" class="error" class="wrapper">
+   <form id="form" class="form" onsubmit="return test()">
    <div class="pageTitle title"><u> Contact Form </u></div><br>
    <div class="secondaryTitle title">Fill in this form to contact me & I will get back to you A.S.A.P</div>
-   <input type="text" class="name formEntry" placeholder="Name" />
-   <input type="text" class="email formEntry" placeholder="Email"/>
-   <textarea class="message formEntry" placeholder="Message"></textarea>
+   <input type="text" id="name" class="name formEntry" placeholder="Full Name"/>
+   <input type="text" id="email" class="email formEntry" placeholder="Email Address"/>
+   <textarea id="message" class="message formEntry" placeholder="Message"></textarea>
    <button class="submit formEntry" onclick="thanks()">Submit</button>
    </form>
+   <div id="confirmation" class="error"></div>
    </div>
-   <script src="app.js"></script>
-   </body>
-   <!--End of website-->
+   <script type = "text/javascript" src = "portfolio.js"></script>
+   </body>-->
 </html>
