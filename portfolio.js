@@ -21,14 +21,13 @@ function test(){
        return false;
    }
 
-   if(message.length < 15 || message.length > 140){
+   if(message.length < 10 || message.length > 140){
     text = "Invalid message";
     error.innerHTML = text;
     return false;
    }
-
-   return true;
-}
+    return true;
 
 submit.onclick = function test(){
+}
 }

@@ -93,119 +93,112 @@ p {
 
 
 /*Styling for contact form*/
-
-#title-Tag-Line {
-  font-size: 20px;
-}
-
-/* .card-item__bg{
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  display: block;
-  position: relative;
-  margin: 30px auto;
-  transform: translate(0px, 50px);
-  z-index: 5;
-} */
-
-/* form animation starts */
-.form {
-  background: #fff;
-  border-radius: 5px;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  left: 0;
-  right: 0;
-  position: absolute;
-/*   z-index: 1; */
-  animation: bounce 1.5s infinite;
-}
-::-webkit-input-placeholder {
-  font-size: 1.5em;
-}
-
-.title{
-  display: block;
-  font-family: sans-serif;
-  margin: 10px auto 5px;
-  width: 300px;
-}
-
-
 .pageTitle{
-  font-size: 2.5em;
-  font-weight: bold;
-  text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+ margin-left: 15px;
+ margin-right: auto;
+ width: 85%;
+ border: solid 5px navy;
+ border-radius:10px;
 }
+.secondaryTitle {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+color:white;
+padding: 10px;
 
-.secondaryTitle{
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  text-transform: capitalize;
+
 }
-
-.name {
-  background-color: #ebebeb;
-  color:black;
-  font-size:15px;
-}
-
-
-.email {
-  background-color: #ebebeb;
-  height: 2em;
-  color: black;
-  font-size:15px;
-}
-
-
-.message {
-  background-color: #ebebeb;
-  overflow: hidden;
-  height: 10rem;
-  color: black;
-  font-size:15px;
-}
-
-
-.formEntry {
-  display: block;
-  margin: 30px auto;
-  min-width: 300px;
-  padding: 10px;
-  border-radius: 2px;
-  border: none;
-  transition: all 0.5s ease 0s;
-}
-
-.submit {
-  width: 200px;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.submit:hover {
-  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
-  transform: translateY(-3px);
-  width: 300px;
-  border-radius: 0%;
+.wrapper {
+  border: solid 5px navy;
+  border-radius:10px;
   padding: 25px;
+  width: 93%;
 }
 
-@keyframes bounce {
-  0% {
-    tranform: translate(0, 4px);
-  }
-  50% {
-    transform: translate(0, 8px);
-  }
-} 
+.error {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border: solid 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: solid 4px navy;
+  color: red;
+}
 
+div.form
+{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: white;
+    padding: 55px;
+    border: dashed 7px navy;
+    border-radius:20px;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 20px 28px;
+  margin:10px 0;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: white;
+  color: navy;
+  border: solid 5px navy;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+  border: 6px solid #555;
+}
+textarea {
+  width: 93%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  background-color: white;
+  color: navy;
+  border: solid 5px navy;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+  font-size: 20px;
+}
+
+
+input[type=submit] {
+  background-color: navy;
+  border: none;
+  color: white;
+  padding: 18px 32px;
+  text-decoration: none;
+  margin-left: 60px;
+  margin-right: auto;
+  cursor: pointer;
+  width: 80%;
+  text-align: center;
+  font-size: 20px;
+  font-size: 25px;
+  border-radius: 15px;
+  border: solid 4px white;
+  font-weight: bold;
+
+}
+input[type=submit]:focus {
+background-color: white;
+color: navy;
+}
